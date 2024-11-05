@@ -1,4 +1,3 @@
-import { measureMemory } from "vm";
 
 export const CONFIGDATA = {
   CONFIGMESSAGE: "こんにちは",
