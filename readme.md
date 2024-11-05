@@ -2,6 +2,19 @@
 
 ## 開発方法
 
+```bash
+# git@github.com:aktservice/gasEsbuildTemp.git
+# こちらのPJをテンプレートにして
+# 自分のリポジトリを作成して下さい
+cd ~/Desktop/
+
+git clone git@github.com:{yourRepo}/yourPJ.git
+cd ./yourGasEsbuildTempProject
+npm i # or install
+cd src
+
+```
+
 - `src`配下にスクリプトファイルを配置してコードを書きます
 - [import 文](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/import "MDN")を使ってコードを書けます
 - `npm run build`で`src`フォルダ内を `build` します
