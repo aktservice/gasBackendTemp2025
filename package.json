@@ -12,6 +12,8 @@
     "build": "node esbuild.js",
     "push": "clasp push",
     "open": "clasp open",
+    "cp": "cp ./src/appsscript.json ./dist/appsscript.json",
+    "adeploy": "npm run cp && npm run build && npm run push",
     "deploy": "npm run build && npm run push"
   },
   "devDependencies": {
