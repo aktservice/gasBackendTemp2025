@@ -6,6 +6,7 @@ esbuild
     bundle: true,
     //minify: true,
     outfile: "./dist/main.js",
+    target: "ES2021",
     plugins: [GasPlugin],
   })
   .catch((e) => {
