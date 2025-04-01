@@ -13,6 +13,7 @@
     "push": "clasp push",
     "open": "clasp open",
     "cp": "cp ./src/appsscript.json ./dist/appsscript.json",
+    "cpw": "node -e \"require('fs').cpSync('./src/index.html', './dist/index.html', {recursive: true})\"",
     "adeploy": "npm run cp && npm run build && npm run push",
     "deploy": "npm run build && npm run push"
   },
