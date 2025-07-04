@@ -10,12 +10,17 @@
   },
   "scripts": {
     "build": "node esbuild.js",
+    "nbuild": "tsc",
     "push": "clasp push",
     "open": "clasp open",
     "cp": "cp ./src/appsscript.json ./dist/appsscript.json",
-    "cpw": "node -e \"require('fs').cpSync('./src/index.html', './dist/index.html', {recursive: true})\"",
+    "cpw": "cp ./src/static/* ./dist/",
+    "nodecp": "node -e \"require('fs').cpSync('./src/appsscript.json','./dist/appsscript.json',{recursive:true})\"",
+    "nodecpw": "node -e \"require('fs').cpSync('./src/static/', './dist/', {recursive: true})\"",
     "adeploy": "npm run cp && npm run build && npm run push",
-    "deploy": "npm run build && npm run push"
+    "deploy": "npm run build && npm run push",
+    "ndeploy": "npm run nbuild && npm run push",
+    "clearn": "rm -f ./dist/*"
   },
   "devDependencies": {
     "@types/node": "^22.7.9",

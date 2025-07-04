@@ -3,7 +3,7 @@
   "compilerOptions": {
     "target": "ES2021", // 出力するJavaScriptのバージョン (ES2021はGASで動作します)
     "module": "CommonJS", // モジュールの形式 (GASではCommonJSが一般的です)
-    "rootDir": "./tscSrc", // TypeScriptソースファイルのルートディレクトリ
+    "rootDir": "./tscsrc", // TypeScriptソースファイルのルートディレクトリ
     "outDir": "./dist", // コンパイルされたJavaScriptファイルの出力ディレクトリ
     "strict": true, // 厳格な型チェックを有効にする
     "esModuleInterop": true, // CommonJSとES Modulesの互換性を高める
@@ -13,7 +13,7 @@
     "removeComments": false // コメントを削除しない (trueにすると削除されます)
   },
   "include": [
-    "tscSrc/**/*.ts" // コンパイル対象のファイルを指定
+    "tscsrc/**/*.ts" // コンパイル対象のファイルを指定
   ],
   "exclude": [
     "node_modules", // コンパイル対象から除外するディレクトリ
