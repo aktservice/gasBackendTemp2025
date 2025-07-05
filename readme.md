@@ -1,6 +1,7 @@
 # Google Apps Script with esbuild Template
 
 TypeScript と esbuild を使用して、モダンな開発環境で Google Apps Script (GAS) プロジェクトを構築するためのテンプレートです。
+バックエンドの開発に特化させています
 
 ## ✨ 特徴
 
@@ -60,17 +61,28 @@ TypeScript と esbuild を使用して、モダンな開発環境で Google Apps
 ## 📂 ディレクトリ構成
 
 ```
-.
-├── dist/              # ビルド後のファイルが格納される (claspのpush対象)
-├── node_modules/      # npmパッケージ
-├── src/               # ソースコード (ここで開発します)
-│   ├── main.ts        # エントリーポイントの例
-│   └── appsscript.json # GASのマニフェストファイル
-├── .clasp.json        # claspの設定ファイル
-├── .gitignore
-├── esbuild.js         # esbuildのビルド設定
+./
+├── dist
+├── esbuild.js
+├── package-lock.json
 ├── package.json
-└── tsconfig.json
+├── readme.md
+├── src
+│   ├── appsscript.json
+│   ├── event.ts
+│   ├── main.ts
+│   └── static
+│       └── index.html
+├── tsconfig.json
+├── tscsrc
+│   ├── event.ts
+│   └── static
+│       └── index.html
+└── worksheetfunctions
+    ├── appsscript.json
+    └── worksheetfunction.ts
+
+
 ```
 
 ## 💻 開発フロー

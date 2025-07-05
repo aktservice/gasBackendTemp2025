@@ -8,8 +8,8 @@ esbuild
     outfile: "./dist/main.js",
     target: "ES2021",
     plugins: [GasPlugin],
-    legalComments: "inline", // この行を追加
-    charset: "utf8",
+    legalComments: "inline", // コメントを残す
+    charset: "utf8", //アスキーコードではなく
   })
   .catch((e) => {
     console.error(e);
